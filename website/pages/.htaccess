@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Remove .php from URLs in the "pages" directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^pages/([a-zA-Z0-9_-]+)$ /pages/$1.php [L]

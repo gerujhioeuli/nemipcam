@@ -1,0 +1,80 @@
+/* Mobile Styles */
+@media (max-width: 1024px) {
+    /* Header */
+    .header-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-logo {
+        margin-bottom: 15px;
+    }
+    
+    .header-search {
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    .header-icons {
+        margin-top: 15px;
+    }
+    
+    /* Mobile Search */
+    .phonesearch {
+        display: flex;
+        padding: 10px 15px;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .phonesearch input {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .sogeknap {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+    
+    /* Category Section */
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Product Section */
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Product Detail */
+    .product-detail {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-logo, .footer-links, .footer-contact {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    /* Category Section */
+    .categories {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Product Section */
+    .products {
+        grid-template-columns: 1fr;
+    }
+} 

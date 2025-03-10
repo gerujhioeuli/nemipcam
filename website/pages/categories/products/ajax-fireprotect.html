@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../../Sensorer.php"><div class="active">Sensorer</div></a>
+                            <a href="../indendors.php"><div class="unactive_category">Indendørs detektorer</div></a>
+                            <a href="../udendors.php"><div class="unactive_category">Udendørs detektorer</div></a>
+                            <a href="../brand.php"><div class="active_category">Brand detektorer</div></a>
+                                <a href="../products/ajax-fireprotect.html"><div class="active_product">Ajax FireProtect</div></a>
+                        <a href="../../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../../assets/images/0017201_ajax-fireprotect_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0017201_ajax-fireprotect_415.png" alt="Thumbnail 1" onclick="changeImage('../../assets/images/0017201_ajax-fireprotect_415.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0017204_ajax-fireprotect.png" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0017204_ajax-fireprotect.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0017205_ajax-fireprotect.png" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0017205_ajax-fireprotect.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax FireProtect</h3>
+                        <hr>
+                        <img src="../../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul><li>Trådløs røg- og varmedetektor</li><li>Med lydgiver / sirene</li><li>Registrerer røg- og hurtig temperaturstigning</li><li>Kan fungere uafhængigt at alarmsystemet</li><li>Giver besked om manglende rengøring</li></ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><h4><span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif">AJAX FireProtect / Røgalarm</span></h4><p><strong>Driftsprincip</strong></p><p>Trådløs branddetektor med temperatursensor, der overvåger sikkerheden i rummet 24 timer i døgnet og straks giver besked om røgudvikling og hurtig&nbsp;temperaturstigning.</p><p>Enheden registrerer røg ved hjælp af et kamera med fotoelektrisk sensor. Hvis der ikke udsendes røg, registrerer den ekstra detektor temperaturstigning i rummet.</p><p><strong>Funktioner</strong></p><p>Røgalarmen kan fungere uafhængigt af hubben og udsende en brandalarm ved hjælp af en indbygget sirene. Flere detektorer indikerer en alarm samtidigt.</p><h4 style="text-align:left"><span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif">Installation og montering</span></h4><p>Røgalarmen er klar til montering med det samme: batteriet er allerede installeret og det er derfor ikke nødvendigt at adskille den. Med et enkelt klik kan den forbindes til hubben i mobilapplikationen. Den kan monteres på SmartBracket beslaget på få minutter.</p><h4>Tekniske specifikationer:</h4><ul><li>Type detektor: Trådløs</li><li>Installation: Indendørs</li><li>Kompatibilitet: Fungerer uafhængigt eller med alle Ajax- hubber , rækkeviddeudvidere , ocBridge Plus , uartBridge</li><li>Følerelement: Fotoelektriske og temperaturfølere</li><li>Aktiveringstærskel:+ 59 ° ? ± 2 ° ?</li><li>Alarm type: Lyd/lys</li><li>Indbygget sirene: 85 dB</li><li>Leveringstid for alarmsignal: 0,15 s</li><li>Strømforsyning: 2 CR2 batterier, 3 V</li><li>Batteri liv: Op til 5 år</li><li>Driftstemperaturområde: Fra 0&nbsp;° ? til + 65&nbsp;° ?</li><li>Dimensioner: 132 × 132&nbsp;× 31&nbsp;mm</li><li>Vægt: 220&nbsp;g</li></ul><h4 style="text-align:left">Pakken indeholder:&nbsp;</h4><ul><li>FireProtect / Røgdetektor</li><li>SmartBracket-monteringspanel</li><li>2 x CR2-batterier (forudinstalleret)</li><li>1 x backup-batteri CR2032 (forudinstalleret)</li><li>Installationssæt</li><li>Brugervejledning</li></ul></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteRule ^$ public/ [L]
+RewriteRule (.*) public/$1 [L]
+
+# Redirect all requests to public/index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ public/index.php [QSA,L]
+
+# Handle direct access to files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|gif|ico)$
+RewriteRule ^ public/index.php [QSA,L]
+
+# Redirect old category pages to new MVC routes
+RewriteRule ^pages/Videoovervågning\.php$ /categories/1 [R=301,L]
+RewriteRule ^pages/Alarmpakker\.php$ /categories/2 [R=301,L]
+RewriteRule ^pages/Alarmpaneler\.php$ /categories/3 [R=301,L]
+RewriteRule ^pages/Betjening\.php$ /categories/4 [R=301,L]
+RewriteRule ^pages/Sensorer\.php$ /categories/5 [R=301,L]
+RewriteRule ^pages/Sirener\.php$ /categories/6 [R=301,L]
+RewriteRule ^pages/Andet\.php$ /categories/7 [R=301,L]
+
+# Redirect old product pages to new MVC routes
+RewriteRule ^pages/products/([^/]+)\.html$ /products/$1 [R=301,L]
+RewriteRule ^pages/categories/products/([^/]+)\.html$ /products/$1 [R=301,L]

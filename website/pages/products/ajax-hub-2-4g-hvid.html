@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../Alarmpaneler.php"><div class="active">Alarmpaneler</div></a>
+                            <a href="../products/ajax-hub.html"><div class="unactive_product">Ajax Hub</div></a>
+                            <a href="../products/ajax-hub-2.html"><div class="unactive_product">Ajax Hub 2</div></a>
+                            <a href="../products/ajax-hub-plus.html"><div class="unactive_product">Ajax Hub Plus</div></a>
+                            <a href="../products/ajax-hub-2-plus.html"><div class="unactive_product">Ajax Hub 2 Plus</div></a>
+                            <a href="../products/ajax-hub-2-4g-hvid.html"><div class="active_product">Ajax Hub 2 4G hvid</div></a>
+                        <a href="../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../Sensorer.php"><div class="unactive">Sensorer</div></a>
+                        <a href="../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../assets/images/0019612_ajax-hub-2-4g-hvid_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019612_ajax-hub-2-4g-hvid_415.png" alt="Thumbnail 1" onclick="changeImage('../../assets/images/0019612_ajax-hub-2-4g-hvid_415.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019613_ajax-hub-2-4g-hvid.jpeg" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0019613_ajax-hub-2-4g-hvid.jpeg')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax Hub 2 4G hvid</h3>
+                        <hr>
+                        <img src="../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul>
+                                <li>Alarmpanel m. billedverifikation</li>
+                                <li>GSM (2G/3G/4G(LTE)) 2xSIM</li>
+                                <li>Ethernet & Wifi</li>
+                                <li>Tilsluttede enheder: 200</li>
+                                <li>Tilsluttede repeatere: 5</li>
+                                <li>Brugere: 200</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><p>Med 4G Hub'en fra Ajax kan du tilslutte 3 uafhængige kanaler 2 x 4G GSM og internet. Kanalerne fungerer parallelt og bakker hinanden op i nødstilfælde.</p></div>           
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>
