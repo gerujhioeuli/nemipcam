@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../Alarmpaneler.php"><div class="active">Alarmpaneler</div></a>
+                            <a href="../products/ajax-hub-2.html"><div class="unactive_product">Ajax Hub 2</div></a>
+                            <a href="../products/ajax-hub-2-plus.html"><div class="active_product">Ajax Hub 2 Plus</div></a>
+                        <a href="../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../Sensorer.php"><div class="unactive">Sensorer</div></a>
+                        <a href="../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../assets/images/0019344_ajax-hub-2-plus_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019344_ajax-hub-2-plus_415.png" alt="Thumbnail 1" onclick="changeImage('../../assets/images/0019344_ajax-hub-2-plus_415.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019345_ajax-hub-2-plus.png" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0019345_ajax-hub-2-plus.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019346_ajax-hub-2-plus.png" alt="Thumbnail 3" onclick="changeImage('../../assets/images/0019346_ajax-hub-2-plus.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019347_ajax-hub-2-plus.png" alt="Thumbnail 4" onclick="changeImage('../../assets/images/0019347_ajax-hub-2-plus.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019348_ajax-hub-2-plus.jpeg" alt="Thumbnail 5" onclick="changeImage('../../assets/images/0019348_ajax-hub-2-plus.jpeg')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax Hub 2 Plus</h3>
+                        <hr>
+                        <img src="../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul><li>Alarmpanel m. billedverifikation</li><li>GSM (2G/3G/4G(LTE))&nbsp;2xSIM</li><li>Ethernet</li><li>Wifi</li><li>Tilsluttede enheder: 200</li><li>Tilsluttede repeatere: 5</li><li>Brugere: 200</li></ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><h4 style="text-align:left">Ajax Hub 2 Plus alarmpanel</h4><p>Hub 2 Plus alarmpanelets pålidelighed garanterer hurtig levering af alarmsignaler til alarmmodtagelsescenter og systembrugere</p><p>Alarmpanelet har 4 kommunikationskanaler og understøtter LTE. En sådan konfiguration giver dig mulighed for at forbinde enheden til to separate internetudbydere via Ethernet og Wi-Fi, mens du har to mobiltelefontjenester klar til sikkerhedskopiering. Skiftet mellem kanaler sker problemfrit på få sekunder.</p><h4 style="text-align:left">Alarmbekræftigelse med foto på 9 sekunder</h4><p>Fotokontrol er sikkerhedsindustriens fremtid. Denne teknologi er en optimal løsning til både kommercielle lokaler og boliger - den er tilgængelig og bygget til at respektere privatlivets fred.</p><p>Animerede fotoserier fra MotionCam-detektorer giver brugere og CMS-operatører mulighed for at evaluere situationen i aktion. Men fotokameraer aktiveres kun som reaktion på alarmer, aldrig efter anmodning.</p><p>Hub 2 Plus kan du styre op til 200 MotionCam-detektorer og levere fotobekræftelser af alarmer til brugere og alarmovervågningsfirmaer på bare 9 sekunder, selv når det bruger SIM-kort til kommunikation.</p><h4 style="text-align:left">Beskyttelse af store lokaler med kompleks intern organisation</h4><p>Forretningscentre, fabrikker og villaer med flere etager med udhus - Hub 2 Plus er klar til at sikre selv de mest komplicerede ejendomme.&nbsp;</p><p>Hubben styrer op til 200 enheder. Dets radiosignalområde kan nå op til 2.000 meter, mens den maksimale radionetværksdækning kan nå 35 km 2 . Hub 2 Plus kan administrere 25 sikkerhedsgrupper med et samlet antal på 200 brugere. Dette giver sikkerhedspersonale mulighed for at opdele store lokaler i zoner og tydeligt organisere personalets adgang.</p><h4 style="text-align:left">Sikker autimatisering i hjemmet og på kontoret</h4><ul><li>Øg potentialet i dit sikkerhedssystem med scenarier for aktivt at modstå de trusler, det opdager, og automatiser dine rutiner. Eksempler på scenarier:</li><li>Opsæt en skemalagt aktivering af nattilstand</li><li>Sluk automatisk for alle kontorlamper ved at aktivere systemet</li><li>Programmér udendørslamperne til at tænde, når en udendørs bevægelsesdetektor aktiveres</li><li>Installer et bæredygtigt system til oversvømmelse.</li><li>Systemet fortsætter med at udføre scenarier, selvom forbindelsen til Ajax Cloud går tabt.</li></ul><h4 style="text-align:left">Tekniske specifikationer</h4><ul><li>Installation: Indendørs</li><li>Tilsluttede enheder: 200</li><li>Brugere: 200</li><li>Rum: 50</li><li>Grupper: 25</li><li>Scenarier: 64</li><li>Understøtter bevægelsessensor med kamera: Ja</li><li>Mobile apps: iOS 11.0 og nyere - Android 4.4 og nyere</li><li>Kommunikationskanaler:<ul><li>2 SIM-kort</li><li>2G (GSM900 / DCS1800 (B3 / B8))</li><li>3G (WCDMA 850/900/2100 (B1 / B5 / B8))</li><li>LTE (FDD B1 / B3 / B5 / B7 / B8 / B20)</li><li>Wi-Fi (802.11 b / g / n)</li><li>Ethernet</li></ul></li><li>Alarmsignal: Leveringstid: 0,15 s</li><li>Typer af meddelelser: SMS-besked, opkald, push</li><li>Skift mellem 2G og 3G, LTE: Øjeblikkelig</li><li>Skift mellem SIM-kort: 4 minutter</li><li>Kommunikation med den centrale overvågningsstation: Kontakt-ID, SIA</li><li>Processor: ARM</li><li>Operativ system: OS Malevich</li><li>Strømforsyning:110-240 V med forudinstallaeret batteri</li><li>6 V med alternativ 6V PSU strømforsyning</li><li>Energiforbrug fra 110-240 V - 10 W.</li><li>Indbygget backupbatteri: Li-Ion 3 A ·</li><li>Sikrer op til 15 timers drift, når du kun bruger SIM-kort</li><li>Juvelerradioteknologi<ul><li>Kommunikationsområde med detektorer - op til 2.000 m i åbent rum</li><li>Tovejskommunikation mellem enheder</li><li>Driftsfrekvenser - 868,0 - 868,6 MHz</li><li>Selvjusterende RF-udgangseffekt - op til 25 mW Blokkryptering</li><li>baseret på AES-algoritme</li><li>Detektor pollingperiode - 12-300 s</li><li>Frekvenshopping</li></ul></li><li>Driftstemperaturområde: Fra -10 ° ? til + 40 ° ?</li><li>Antisabotage: Beskyttelse mod bedrageri, jamming detektering, Børnesikret</li><li>Video overvågning: Op til 50 kameraer eller DVR'er</li><li>Fjernopsætning: +</li><li>Dimensioner: 163 × 163 × 36 mm</li><li>Vægt: 351g</li><li>Tilsluttet ReX: 5</li></ul><p>Komplet sæt</p><ul><li>Ajax Hub 2 Plus kontrolenhed</li><li>SmartBracket-monteringspanel</li><li>Strømkabel</li><li>Ethernet-kabel</li><li>Installationssæt</li><li>SIM-kort (afhængigt af region)</li><li>Brugervejledning</li></ul></div>             
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

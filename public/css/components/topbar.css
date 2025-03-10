@@ -1,0 +1,52 @@
+.topbar {
+    background-color: #f8f9fa;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar-contact span {
+    margin-right: 20px;
+    color: #6c757d;
+}
+
+.topbar-contact i {
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.topbar-links a {
+    color: #6c757d;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.topbar-links a:hover {
+    color: #007bff;
+}
+
+.topbar-links i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .topbar-contact span {
+        display: none;
+    }
+    
+    .topbar-links {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .topbar-links a {
+        margin: 0 10px;
+    }
+} 

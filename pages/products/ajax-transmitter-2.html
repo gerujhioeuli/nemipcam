@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../Sensorer.php"><div class="unactive">Sensorer</div></a>
+                        <a href="../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../Andet_tilbehør.html"><div class="active">Andet tilbehør</div></a>
+                            <a href="../products/ajax-holder-til-button-og-doublebutton.html"><div class="unactive_product">Ajax holder til Button og DoubleButton</div></a>
+                            <a href="../products/ajax-leaksprotect.html"><div class="unactive_product">Ajax LeaksProtect</div></a>
+                            <a href="../products/ajax-multitransmitter-2-3-eol.html"><div class="unactive_product">Ajax multitransmitter 2-3 EOL</div></a>
+                            <a href="../products/ajax-rex-2.html"><div class="unactive_product">Ajax ReX 2</div></a>
+                            <a href="../products/ajax-socket.html"><div class="unactive_product">Ajax Socket, 230 V</div></a>
+                            <a href="../products/ajax-din-holder-til-relay-og-wallswitch.html"><div class="unactive_product">Ajax DIN Holder (Til Relay og WallSwitch)</div></a>
+                            <a href="../products/ajax-waterstop-1-hvid.html"><div class="unactive_product">Ajax WaterStop 1", Hvid</div></a>
+                            <a href="../products/ajax-waterstop-3-4-white.html"><div class="unactive_product">Ajax WaterStop 3/4" White</div></a>
+                            <a href="../products/ajax-waterstop-1-2-hvid.html"><div class="unactive_product">Ajax WaterStop 1/2", Hvid</div></a>
+                            <a href="../products/ajax-12v-psu-for-hub-2-2.html"><div class="unactive_product">Ajax 12V PSU for Hub 2</div></a>
+                            <a href="../products/ajax-12v-psu-for-hub-hub-plus-rex-2.html"><div class="unactive_product">Ajax 12V PSU for Hub/Hub Plus/ReX</div></a>
+                            <a href="../products/ajax-6v-psu-for-hub-2-2.html"><div class="unactive_product">Ajax 6V PSU for Hub 2</div></a>
+                            <a href="../products/ajax-relay-2.html"><div class="unactive_product">Ajax Relay</div></a>
+                            <a href="../products/ajax-transmitter-2.html"><div class="active_product">Ajax Transmitter</div></a>
+                            <a href="../products/ajax-wallswitch-sort.html"><div class="unactive_product">Ajax WallSwitch sort</div></a>
+                            <a href="../products/ajax-ocbridge-plus-2.html"><div class="unactive_product">Ajax ocBridge Plus</div></a>
+                            <a href="../products/ajax-uartbridge-2.html"><div class="unactive_product">Ajax uartBridge</div></a>
+                            <a href="../products/ajax-vhfbridge.html"><div class="unactive_product">Ajax vhfBridge</div></a>
+                            <a href="../products/ajax-lifequality.html"><div class="unactive_product">Ajax LifeQuality</div></a>
+                            <a href="../products/ajax-12-24v-psu-for-hub-2-hub-2-plus-rex-2.html"><div class="unactive_product">Ajax 12-24V PSU for Hub 2/Hub 2 Plus/ReX 2</div></a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../assets/images/0019371_ajax-hub2-starterkit-plus-med-kamera_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019371_ajax-hub2-starterkit-plus-med-kamera_415.png" alt="Thumbnail 1" onclick="changeImage('../../assets/images/0019371_ajax-hub2-starterkit-plus-med-kamera_415.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../assets/images/0019372_ajax-hub2-starterkit-plus-med-kamera.png" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0019372_ajax-hub2-starterkit-plus-med-kamera.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax Hub2 Plus StarterKit med kamera</h3>
+                        <hr>
+                        <img src="../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <li>Ajax alarm startsæt m. kamera</li>
+                            <li>Hub 2 Plus alarmpanel</li>
+                            <li>Ethernet, GSM (2 x SIM kort (2G), LTE, Wifi</li>
+                            <li>Tilslut op til 200 enheder</li>
+                            <li>Op til 200 brugere</li>
+                            <li>Installer sættet på 30 minutter</li>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description">
+                    <h4>AJAX StarterKit Cam Plus / Alarm startpakke, kamera Plus</h4>
+                    <p>Kommunikation med den ydre verden er afgørende for et sikkerhedssystem. Den definerer hastigheden på reaktionen på potentielle trusler.</p>
+                    <p>Hub 2 Plus styrer StarterKit Cam Plus-systemet. Den er udstyret med Ethernet-port, Wi-Fi-modul og 2 SIM-kort, der understøtter LTE. Fire kanaler sikkerhedskopierer hinanden for at garantere kontinuerlig øjeblikkelig alarmkommunikation. Desuden tillader de Ajax at levere fotoverifikationer til alarmovervågningsfirmaer og brugere på mindre end 9 sekunder. Selv over et mobilnetværk.</p>
+                
+                    <h4>Installation og montering</h4>
+                    <p>Alarm startpakken installeres på 30 minutter. Dette kræver et minimum af værktøj og indsats. Alle enheder er klar til installation med det samme: de leveres med standardindstillinger og forudinstallerede batterier. Guiden til interaktiv installation i mobilapplikationen hjælper dig med at forbinde detektorer og teste detektionszoner. Hvis du har brug for hjælp, er du altid velkommen til at kontakte os.</p>
+                
+                    <div class="media-element" style="position:relative;padding-bottom:56.25%;padding-top:25px;height:0">
+                        <iframe class="media-element-content" style="position:absolute;top:0;left:0;width:100%;height:100%" src="www.youtube.com/embed/ZPafsXk-ThI" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                
+                    <h4>Tekniske specifikationer:</h4>
+                    <ul>
+                        <li>Installation: Indendørs</li>
+                        <li>Tilsluttede enheder: 200</li>
+                        <li>Brugere: 200</li>
+                        <li>Rum: 50</li>
+                        <li>Grupper: 25</li>
+                        <li>Scenarier: 64</li>
+                        <li>Understøtter bevægelsessensor med kamera: Ja</li>
+                        <li>Mobile apps: iOS 11.0 og nyere - Android 4.4 og nyere</li>
+                        <li>Kommunikationskanaler:
+                            <ul>
+                                <li>2 SIM-kort
+                                    <ul>
+                                        <li>2G (GSM900 / DCS1800 (B3 / B8))</li>
+                                        <li>3G (WCDMA 850/900/2100 (B1 / B5 / B8))</li>
+                                    </ul>
+                                </li>
+                                <li>LTE (FDD B1 / B3 / B5 / B7 / B8 / B20)</li>
+                                <li>Wi-Fi (802.11 b / g / n)</li>
+                                <li>Ethernet</li>
+                            </ul>
+                        </li>
+                        <li>Alarmsignal: Leveringstid: 0,15 s</li>
+                        <li>Typer af meddelelser: SMS-besked, opkald, push</li>
+                        <li>Skift mellem 2G og 3G, LTE: Øjeblikkelig</li>
+                        <li>Skift mellem SIM-kort: 4 minutter</li>
+                        <li>Kommunikation med den centrale overvågningsstation: Kontakt-ID, SIA</li>
+                        <li>Processor: ARM</li>
+                        <li>Operativ system: OS Malevich</li>
+                        <li>Strømforsyning: 110-240 V med forudinstalleret batteri
+                            <ul>
+                                <li>6 V med alternativ 6V PSU strømforsyning</li>
+                                <li>Energiforbrug fra 110-240 V: 10 W</li>
+                                <li>Indbygget backupbatteri: Li-Ion 3 A · h<br>Sikrer op til 15 timers drift, når du kun bruger SIM-kort</li>
+                            </ul>
+                        </li>
+                    </ul>
+                
+                    <h4>Pakken indeholder:</h4>
+                    <ul>
+                        <li>Hub 2 Plus kontrolpanel</li>
+                        <li>Trådløs bevægelsesdetektor m. kamera</li>
+                        <li>Trådløs åbningsdetektor</li>
+                        <li>Trådløs fjernbetjening</li>
+                    </ul>
+                </div>                
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

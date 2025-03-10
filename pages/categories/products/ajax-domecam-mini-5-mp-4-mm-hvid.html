@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../../Videoovervågning.php"><div class="active">Videoovervågning</div></a>
+                            <a href="../kamera.html"><div class="active_category">Kamera</div></a>
+                                <a href="../products/ajax-domecam-mini-8-mp-4-mm-sort.html"><div class="unactive_product">Ajax DomeCam Mini, 8 MP, 4 mm, sort</div></a>
+                                <a href="../products/ajax-domecam-mini-8-mp-4-mm-hvid.html"><div class="unactive_product">Ajax DomeCam Mini, 8 MP, 4 mm, hvid</div></a>
+                                <a href="../products/ajax-domecam-mini-5-mp-4-mm-sort.html"><div class="unactive_product">Ajax DomeCam Mini, 5 MP, 4 mm, sort</div></a>
+                                <a href="../products/ajax-domecam-mini-5-mp-4-mm-hvid.html"><div class="active_product">Ajax DomeCam Mini, 5 MP, 4 mm, hvid</div></a>
+                                <a href="../products/ajax-bulletcam-5-mp-28-mm-sort.html"><div class="unactive_product">Ajax BulletCam, 5 MP, 2.8 mm, sort</div></a>
+                                <a href="../products/ajax-bulletcam-5-mp-28-mm-hvid.html"><div class="unactive_product">Ajax BulletCam, 5 MP, 2.8 mm, hvid</div></a>
+                                <a href="../products/ajax-bulletcam-8-mp-28-mm-sort.html"><div class="unactive_product">Ajax BulletCam, 8 MP, 2.8 mm, sort</div></a>
+                                <a href="../products/ajax-bulletcam-8-mp-28-mm-hvid.html"><div class="unactive_product">Ajax BulletCam, 8 MP, 2.8 mm, hvid</div></a>
+                                <a href="../products/ajax-turretcam-5-mp-28-mm-sort.html"><div class="unactive_product">Ajax TurretCam, 5 MP, 2.8 mm, sort</div></a>
+                                <a href="../products/ajax-turretcam-5-mp-28-mm-hvid.html"><div class="unactive_product">Ajax TurretCam, 5 MP, 2.8 mm, hvid</div></a>
+                                <a href="../products/ajax-turretcam-8-mp-28-mm-hvid.html"><div class="unactive_product">Ajax TurretCam, 8 MP, 2.8 mm, hvid</div></a>
+                                <a href="../products/ajax-turretcam-8-mp-28-mm-sort.html"><div class="unactive_product">Ajax TurretCam, 8 MP, 2.8 mm, sort</div></a>
+                                <a href="../products/ajax-junctionbox-hvid.html"><div class="unactive_product">Ajax JunctionBox Hvid</div></a>
+                            <a href="../NVRoptager.html"><div class="unactive_category">NVR optager</div></a>
+                        <a href="../../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../../Sensorer.php"><div class="unactive">Sensorer</div></a>
+                        <a href="../../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../../assets/images/0020757_ajax-nvr-8-kanals_550.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0020757_ajax-nvr-8-kanals_550.png" alt="Thumbnail 1" onclick="changeImage('../../../assets/images/0020757_ajax-nvr-8-kanals_550.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0022272_ajax-nvr-8-kanals.png" alt="Thumbnail 2" onclick="changeImage('../../../assets/images/0022272_ajax-nvr-8-kanals.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0022273_ajax-nvr-8-kanals.png" alt="Thumbnail 3" onclick="changeImage('../../../assets/images/0022273_ajax-nvr-8-kanals.png')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax Hub2 StarterKit med kamera</h3>
+                        <hr>
+                        <img src="../../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul>
+                                <li>Video optager</li>
+                                <li>Integrer 3-parts kameraer</li>
+                                <li>ONVIF/RTSP</li>
+                                <li>Bevægelsesdetektion</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description">
+                    <p>Integrer tredjeparts kameraer med dit Ajax-system på en hurtig og nem måde.</p>
+                    <h4>Væsentlige kapaciteter</h4>
+                    <ul>
+                        <li>8 kanals</li>
+                        <li>Understøttelse af op til 16 TB HDD.</li>
+                        <li>NVR optageren har en software bevægelsesdetektor, der konstant analyserer billedet. Justering af detekteringszonen er tilgængelig i apps. Det er muligt at skifte mellem NVR-bevægelsesdetektoren og kameraets standard.</li></ul><h4>Problemfri forbindelse</h4><ul><li>Med optageren kan du nem gå fra en hændelse i loggen til hændelsens videooptagelse i arkivet. Så hændelses alarmer er linket direkte til videooptagelserne.</li><li>En dedikeret video 'væg', der kombinerer alle de visuelle data i systemet (inklusive MotionCam-detektorer*), som er tilgængelig i Ajax-appen.</li><li>NVR optageren giver dig mulighed for at opsætte et scenarie, hvor en Ajax detektor udløser specifikke kameraer til at starte optagelsen. Dette resulterer i hurtig visuel verifikation, i høj opløsning af alarmer, direkte i mobil- og desktop-apps (overvågning).</li></ul><h4>Smart brugeroplevelse</h4><ul><li>Brugervenlig interface som gør det nemt at skifte mellem streaming og nem navigation i arkiver.</li><li>NVR optageren kan arbejde med kameraer ved identifikation i DHCP-netværket, så der er ikke behov for yderligere indstillinger i det samme lokale netværk.</li><li>Nem forbindelse og opsætning gennem en krypteret AjaxCloudserver, både på stedet og eksternt. Tjek dine kameraer på farten i mobilappen eller organiser nemt en monitoreringsstation med PRO Desktop*.</li></ul><h4>Privatliv og sikkerhed</h4>
+                        <p><img src="../../../assets/images/Add graphics - EN - Ajax NVR - Privacy.png" alt="" width="100%" height="auto"></p></div>               
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

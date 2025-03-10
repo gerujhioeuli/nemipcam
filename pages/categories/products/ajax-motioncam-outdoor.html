@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../../Sensorer.php"><div class="active">Sensorer</div></a>
+                            <a href="../indendors.php"><div class="unactive_category">Indendørs detektorer</div></a>
+                            <a href="../udendors.php"><div class="active_category">Udendørs detektorer</div></a>
+                                <a href="../products/ajax-motioncam-outdoor.html"><div class="active_product">Ajax MotionCam Outdoor</div></a>
+                                <a href="../products/ajax-dualcurtain-outdoor.html"><div class="unactive_product">Ajax DualCurtain Outdoor</div></a>
+                            <a href="../brand.php"><div class="unactive_category">Brand detektorer</div></a>
+                        <a href="../../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../../assets/images/0020237_ajax-motioncam-outdoor_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0020237_ajax-motioncam-outdoor_415.png" alt="Thumbnail 1" onclick="changeImage('../../assets/images/0020237_ajax-motioncam-outdoor_415.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0020238_ajax-motioncam-outdoor.png" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0020238_ajax-motioncam-outdoor.png')">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="../../../assets/images/0020239_ajax-motioncam-outdoor.png" alt="Thumbnail 2" onclick="changeImage('../../assets/images/0020239_ajax-motioncam-outdoor.png')">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax MotionCam Outdoor</h3>
+                        <hr>
+                        <img src="../../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul><li>Trådløs udendørs bevægelsesdetektor med kamera</li><li>Visuel alarm verifikation</li><li>Anti-masking og pet immunitet</li><li>HDR-kamera</li><li>IR-baggrundsbelysning</li><li>Beskyttelseshætte medfølger</li></ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><h4 style="text-align:left"><strong>Trådløs udendørs bevægelsesdetektor med fotokamera til bekræftelse af alarmer</strong></h4><p>Ved at kombinere den bedste optik, huritg processor og avancerede softwarealgoritmer, tager den udendørs bevægelsessensor med kamera informative bulleder i ethvert vejr - både dag og nat.</p><h4 style="text-align:left">Lynhurtige alarmer. Bekræftet med det samme.</h4><p>Den&nbsp;udendørs beægelsesdetektor med kamera&nbsp;opdager&nbsp;indbruddet fra de allerførste trin på territoriet og bekræfter det med en animeret fotoserie.</p><p>Visuel verifikation hjælper med øjeblikkeligt at fastslå situationen, hvilket sparer brugere for&nbsp;bekymringer og sikkerhedsfirmaer fra unødvendige patruljesendinger.</p><h4 style="text-align:left">Intelligent falsk alarmfilter</h4><p><span style="font-size:12pt">Den udendørs foto detektor er udstyret med to uafhængige PIR-sensorer, hvis signaler analyseres af en totrins algoritme. Når begge sensorer registrerer bevægelse, udfører algoritmen korrelation og spektralanalyse af signalerne, hvilket hjælper med at skelne&nbsp;virkelige trusler fra småforstyrelser som dyr, bevægelse i træer osv.</span></p><h4 style="text-align:left">Installation og montering</h4><p>For at tilføje en detektoren med kamera&nbsp;til systemet er alt, hvad du skal gøre, at scanne QR-koden med Ajax-appen, tildele den et navn og et rum.</p><p>Du kan konfigurere enheden i appen i realtid, testdetekteringszoner og kommunikation. Om nødvendigt kan detektoren deaktiveres, eller systemets parametre kan konfigureres eksternt uden at besøge webstedet.</p><p>Detektoren monteres nemt ved hjælp af det medfølgende SmartBracket.</p><h4 style="text-align:left">Tekniske specifikationer:</h4><ul><li>Klassifikation: Elektro-optisk radiokanalsikkerhedsdetektor</li><li>Type detektor: Trådløs</li><li>Installation: Udendrs/Indendørs</li><li>Kompatibilitet: Hub 2 , Hub 2 Plus.&nbsp;Ikke kompatibel med ReX radiosignalforlænger</li><li>Følerelement: To PIR-sensor</li><li>Leveringstid for alarmsignal: 0,15 s</li><li>Afstand til bevægelsesdetektering: Justerbar, op til 3-15 m.</li><li>Bevægelsesdetektorens synsvinkel:&nbsp;Vandret - 88,5 ° / Lodret - 80 °</li><li>Kameraets vinkel:&nbsp;Vandret - 105 ° / Lodret - 50 °</li><li>Tid til bevægelsesdetektering: Fra 0,3 til 2 m / s</li><li>Fotoopløsning:<ul><li>320 × 176 pixels (som standard)</li><li>640 × 352 pixels</li><li>Optagelserie op til 5 fotos</li></ul></li><li>Følsomhed: Justerbar, 3 niveauer</li><li>Anbefalet installationshøjde: 0,8-1,3 m</li><li>Kæledyrsimmunitet:&nbsp;Vægt - ikke relevant, Højde - op til 80 cm</li><li>Strømforsyning: Batteri: CR123A batteri x4, 3 V</li><li>Batteri liv: Op til 3&nbsp;år</li><li>Driftstemperaturområde: Fra -25&nbsp;° ? til + 60 ° ?</li><li>Dimensioner: 206 × 108&nbsp;× 93&nbsp;mm</li><li>Vægt: 470 g</li><li>Beskyttelsesklasse: IP55</li></ul><h4 style="text-align:left">Pakken indeholder:&nbsp;</h4><ul><li>MotionCam udendørs bevægelsesdetektor</li><li>SmartBracket monteringsbeslag</li><li>4 x CR123A batteri (forudinstalleret)</li><li>Installationssæt</li><li>Hættevisir</li><li>Brugervejledning</li></ul></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

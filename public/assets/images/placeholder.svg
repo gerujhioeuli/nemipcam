@@ -1,0 +1,8 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#999999">Image Placeholder</text>
+  <g fill="none" stroke="#cccccc" stroke-width="2">
+    <path d="M200,150 L600,450"/>
+    <path d="M200,450 L600,150"/>
+  </g>
+</svg> 

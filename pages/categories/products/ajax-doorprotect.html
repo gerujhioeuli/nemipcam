@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../../Sensorer.php"><div class="active">Sensorer</div></a>
+                            <a href="../indendors.php"><div class="active_category">Indendørs detektorer</div></a>
+                                <a href="../products/ajax-doorprotect.html"><div class="active_product">Ajax DoorProtect</div></a>
+                                <a href="../products/ajax-motionprotect.html"><div class="unactive_product">Ajax MotionProtect</div></a>
+                                <a href="../products/ajax-motionprotect-plus.html"><div class="unactive_product">Ajax MotionProtect Plus</div></a>
+                                <a href="../products/motioncam-phod.html"><div class="unactive_product">Ajax MotionCam (PhOD)</div></a>
+                                <a href="../products/motionprotect-curtain.html"><div class="unactive_product">Ajax MotionProtect Curtain</div></a>
+                            <a href="../udendors.php"><div class="unactive_category">Udendørs detektorer</div></a>
+                            <a href="../brand.php"><div class="unactive_category">Brand detektorer</div></a>
+                        <a href="../../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../../assets/images/0017151_ajax-doorprotect_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax DoorProtect</h3>
+                        <hr>
+                        <img src="../../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul><li>Trådløs magnet dørkontakt</li><li>Registrerer når dør/vindue brydes op</li><li>2 medfølgende magneter: stor og lille</li><li>Nem og hurtig installation</li></ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><h4 class="col-s-4 col-m-6 col-l-6 col-xl-12" style="text-align: left; height: 72px;" data-mh="text-item"><span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif">AJAX DoorProtect / Dør- og vindueskontakt</span></h4><p class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item"><span style="font-size:12pt"><strong>Driftsprincip</strong></span></p><p>Kontakten giver besked om de første tegn på indbrud. Enheden registrer nemlig at en dør eller et vindues åbnes/brydes op. Dørkontakten sender, hvis alarmen er tilkoblet, et signal til hubben, som vil reagere og alarmere.</p><p class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item" style=""><span style="font-size:12pt"><strong>Funktioner</strong></span></p><p>Dør-/vindueskontakten består af 2 enheder - en detektor og en magnet. Med i sættet følger 2 magneter. Afstanden på de 2 monterede enheder, afgør hvilken magnet du skal anvende. Den store magnet installeres ved en afstand på op til 2 cm og den lille magnet op til 1 cm.&nbsp;</p><div class="row"><div class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item" style=""><h4 style="text-align:left">Installation og montering</h4><p><span style="font-size:12pt">Dør/vindueskontakten er klar til installation lige fra kassen; batteriet er forudinstalleret og det er derfor ikke nødvendigt at skille kontakten ad. Med et enkelt klik forbindes den til hubben via mobil appen.</span></p><p>Kontakten monteres på det medfølgende SmartBracket hurtigt og nemt.</p></div><div class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item"><h4><a href="#" target="_blank" rel="noopener"><img style="width:500px" src="../../../assets/images/DoorContact-installation.png" alt=""></a></h4></div></div><div class="row"><div class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item"><h4 style="text-align:left">Tekniske specifikationer:</h4><ul><li>Type detektor: Trådløs</li><li>Installation:&nbsp;Indendørs</li><li>Kompatibilitet: Fungerer med alle Ajax- hubs , rækkeviddeudvidere , ocBridge Plus , uartBridge</li><li>Følerelement: Reed-kontakt</li><li>Leveringstid for alarmsignal: 0,15 s</li><li>Aktiveringstærskel: LIlle magnet:1 cm., Stor magnet:&nbsp;2 cm.</li><li>Strømforsyning: Batteri: CR123A batteri, 3 V.</li><li>Batteri liv: Op til 7&nbsp;år</li><li>Driftstemperaturområde: Fra -10 ° ? til + 40 ° ?</li><li>Antisabotage</li><li>Dimensioner: Diameter: 20 mm., Højde: 90 mm.</li><li>Vægt: 29&nbsp;g</li></ul></div><div class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item" style=""><h4 style="text-align:left">Pakken indeholder:&nbsp;</h4><ul><li>DoorProtect dør/vinduedetektor</li><li>SmartBracket monteringsbeslag</li><li>To magneter</li><li>CR123A batteri (forudinstalleret)</li><li>Ekstern kontakt</li><li>Installationssæt</li><li>Brugervejledning</li></ul></div></div></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

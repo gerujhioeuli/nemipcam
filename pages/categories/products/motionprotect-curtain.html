@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../../Betjening.php"><div class="unactive">Betjening</div></a>
+                        <a href="../../Sensorer.php"><div class="active">Sensorer</div></a>
+                            <a href="../indendors.php"><div class="active_category">Indendørs detektorer</div></a>
+                                <a href="../products/ajax-doorprotect.html"><div class="unactive_product">Ajax DoorProtect</div></a>
+                                <a href="../products/ajax-motionprotect.html"><div class="unactive_product">Ajax MotionProtect</div></a>
+                                <a href="../products/ajax-motionprotect-plus.html"><div class="unactive_product">Ajax MotionProtect Plus</div></a>
+                                <a href="../products/motioncam-phod.html"><div class="unactive_product">Ajax MotionCam (PhOD)</div></a>
+                                <a href="../products/motionprotect-curtain.html"><div class="active_product">Ajax MotionProtect Curtain</div></a>
+                            <a href="../udendors.php"><div class="unactive_category">Udendørs detektorer</div></a>
+                            <a href="../brand.php"><div class="unactive_category">Brand detektorer</div></a>
+                        <a href="../../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../assets/images/0019901_ajax-motionprotect-curtain_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax MotionProtect Curtain</h3>
+                        <hr>
+                        <img src="../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul><li>Trådløs indendrs gardin bevægelsesdetektor</li><li>Perimeter beskyttelse</li><li>Beskytter indgange og andre flader som vinduespartier</li><li>2 PIR sensorer</li><li>Nem og hurtig installation</li></ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><h4>AJAX gardin bevægelsesdetektor / MotionProtect Curtain</h4><p>Den indendørs bevægelsesdetektor, med smal stråle, beskytter vinduer, døre og værdigenstande og fungerer som perimeterbeskyttelse.&nbsp;</p><p style="text-align:left"><strong>Proprietær optisk teknologi</strong></p><p>For at oprette MotionProtect Curtain har vi udviklet et optisk system med to infrarøde sensorer og et mangesidet spejl. Dette system giver detektoren mulighed for at modtage dobbelt så meget information om, hvad der foregår i det beskyttede område og straks reagere på menneskelig tilstedeværelse.</p><h4>Hurtig reaktion på trusler</h4><p>Uanset om indtrængeren kører eller sniger/lister, er gardin detektoren altid på vagt. Så snart de kommer ind i synsfeltet, analyserer detektoren signaler fra begge PIR-sensorer og sender straks en alarm.</p><h4>Pålidelig perimeterbeskyttelse</h4><p><strong>Hjemme</strong><br>Med MotionProtect Curtain-detektorer kan du sikre dit hus omkreds og frit bevæge dig indendørs. Hvis en fremmed bryder ind, vil systemet alarmere og ringe til sikkerhedsselskabet.</p><p><img style="width:300px" src="../../assets/images/MotionProtect-Curtain-1.png" alt="" height="170"></p><p style="text-align:left"><strong style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif">I en garage</strong></p><p>Indbrudstyv kommer ikke op gennem garageporten uden at blive opdaget når MotionProtect Curtain er i aktion. Gardindetektoren fortsætter med at fungere, selvom temperaturen falder til -10 ° C.</p><p><img style="width:304px" src="../../assets/images/MotionProtect-Curtain-2.png" alt="" height="172"></p><p><strong style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif">På et museum</strong></p><p>Besøgende kan slentre udstillingerne, som de vil. Men hvis de krydser linjen og strækker sig mod et kunstværk, vil der blive alarm.</p><p><img style="width:300px" src="../../assets/images/MotionProtect-Curtain-3.png" alt="" height="170"></p><p style="text-align:left"><strong>I en kæledyrsvenlig lejlighed</strong><br>Når det er installeret korrekt, holder MotionProtect Curtain din private ejendom sikker og ignorerer kæledyrene, selvom de er Saint Bernards.</p><p><img style="width:304px" src="../../assets/images/MotionProtect-Curtain-4.png" alt="" height="171"></p><p style="text-align:center">&nbsp;</p><h4 style="text-align:left">Installation og montering</h4><p>MotionProtect Curtain opretter forbindelse til sikkerhedssystemet via Ajax-appen: scan QR-koden, tilføj detektoren til rummet, og fortsæt med installationen.</p><h4><img style="width:100%" src="../../assets/images/MotionProtect-Curtain-installation.png" alt=""></h4><h4 style="text-align:left">Tekniske specifikationer:</h4><ul><li>Type detektor: Trådløs</li><li>Installation: Kun Indendørs</li><li>Kompatibilitet: Fungerer med alle Ajax- nav og rækkeviddeudvidere</li><li>Følerelement: To PIR-sensorer</li><li>Leveringstid for alarmsignal: 0,15 s</li><li>Afstand til bevægelsesdetektering:&nbsp;Justerbar, fra 6 til 15 m.</li><li>Registreringsvinkler:&nbsp;Vandret - 6°, Lodret - 90°</li><li>Tid til bevægelsesdetektering: Fra 0,3 til 2 m / s</li><li>Følsomhed: Justerbar, 3 niveauer</li><li>Anbefalet installationshøjde: 2,4 m</li><li>Kæledyrsimmunitet:&nbsp;Vægt - op til 20 kg, Højde - op til 50 cm</li><li>Strømforsyning: Batteri: CR123A batteri, 3 V.</li><li>Batteri liv: Op til 3&nbsp;år</li><li>Driftstemperaturområde: Fra -10 ° ? til + 40 ° ?</li><li>Dimensioner: 134&nbsp;× 44&nbsp;× 34&nbsp;mm</li><li>Vægt: 118&nbsp;g</li></ul><h4 style="text-align:left">Pakken indeholder:&nbsp;</h4><ul><li>MotionProtect Gardin bevægelsesdetektor</li><li>SmartBracket monteringsbeslag</li><li>CR123A batteri (forudinstalleret)</li><li>Beslag</li><li>Installationssæt</li><li>Brugervejledning</li></ul><h4>&nbsp;</h4><h3>&nbsp;</h3></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem Ip Cam</title>
+    <link rel="stylesheet" href="../../assets/css/Alarmpakkerstyle.css">
+    <link rel="stylesheet" media="only screen and (max-width:1024px)" href="../../assets/css/telefonstyle.css" />
+    <style>
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        .kategori-listevisning {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.4s ease-out;
+        }
+
+        /* Arrow styles */
+        #kategori-title {
+            background: #55728a;
+            color: white;
+            padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .arrow {
+            transition: transform 0.4s ease;
+        }
+
+        /* Arrow pointing upwards when the dropdown is open */
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        /* Smooth expand/collapse transition */
+        .kategori-listevisning.expanded {
+            height: 200px; /* Adjust this value according to your content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-wrap">
+            <div>
+                <span>Send til: Danmark</span>
+            </div>
+
+            <div>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header with Logo and Search -->
+    <div class="header">
+        <div class="header-section">
+            <a href="../../index.php"><div class="header-logo">
+                <p>Nem Ip Cam</p>
+            </div></a>
+            <div class="header-search">
+                <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+            </div>
+            <div class="header-icons">
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Telefon søg -->
+    <div class="phonesearch">
+        <img src="../../assets/images/sogeknap.png" class="sogeknap">
+        <input type="text" value="" placeholder="Søg produkt, kategori eller varemærke">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-wrapper">
+            <!-- Kategorier nav -->
+            <div class="kategori-wrapper">
+                <div class="kategori-liste">
+                    <div id="kategori-title">
+                        <h3>Kategorier</h3>
+                        <!-- Arrow added here -->
+                        <span class="arrow">&#9662;</span>
+                    </div>
+                    <div class="kategori-listevisning hidden">
+                        <a href="../Videoovervågning.php"><div class="unactive">Videoovervågning</div></a>
+                        <a href="../Alarmpakker.php"><div class="unactive">Alarmpakker</div></a>
+                        <a href="../Alarmpaneler.php"><div class="unactive">Alarmpaneler</div></a>
+                        <a href="../Betjening.php"><div class="active">Betjening</div></a>
+                            <a href="../products/ajax-keypad-plus.html"><div class="active_product">Ajax KeyPad Plus</div></a>
+                            <a href="../products/ajax-noglebrik.html"><div class="unactive_product">Ajax Nøglebrik</div></a>
+                            <a href="../products/ajax-noglekort.html"><div class="unactive_product">Ajax Nøglekort</div></a>
+                        <a href="../Sensorer.php"><div class="unactive">Sensorer</div></a>
+                        <a href="../Sirener.php"><div class="unactive">Sirener</div></a>
+                        <a href="../Andet_tilbehør.html"><div class="unactive">Andet tilbehør</div></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produkt -->
+            <div class="produkter">
+                <hr>
+                <div class="produkt-wrap">
+                    <div class="gallery">
+                        <div class="main-image">
+                            <img src="../../assets/images/0019887_ajax-keypad-plus_415.png" alt="Camera Y" class="produkt-listevisning-img" id="mainProductImage">
+                        </div>
+                        
+                    </div>
+                    <div class="produkt-listevisning">
+                        <h3>Ajax KeyPad Plus</h3>
+                        <hr>
+                        <img src="../../assets/images/0022376_ajax_420.png" alt="Ajax" style="width: 100%; max-width: 300px;">
+                        <div class="beskrivelse">
+                            <ul><li>Trådløst tastatur og betjeningspanel med kort og nøglebrikslæser<ul><li>DESFire® EV1, EV2<br> ISO14443-? (13,56MHz)</li></ul></li><li>Antal brugere: Afhængigt af hub-model: 50 til&nbsp;200.</li><li>Administrer adgangstilladelser i app</li><li>Lys- og lydindikation</li></ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="full-description"><h4 style="text-align:left">AJAX KeyPad Plus / Tastatur Plus</h4><p>Trådløst tastatur med touch-knapper, som anvendes til at til- og frakoble Ajax alarmen. Plus tastaturet understøtter også krypterede kontaktløse kort og nøglebrikker.</p><p><strong>Driftsprincip</strong></p><p>Ajax Plus tastaturet kombinerer design, avanceret kryptereringsteknologi og en super god brugeroplevelser, for en simpel og beskyttet sikkerhedsadministration af alarmsystemet.&nbsp;</p><p><strong>Funktioner</strong></p><p>Til- og frakobl Ajax alarmen, aktiver nattilstand (deltilkobling) og administrer bestemte grupper med et adgangskort eller nøglebrik.&nbsp;</p><h4 style="text-align:left">Fjernadgangskontrol</h4><p>Opret personlige adgangskoder for at vide, af hvem og hvornår systemet til/frakobles: et brugernavn vises i notifikationen og i hændelsesloggen.</p><p>Kort eller tag kan også tildeles til en bestemt bruger med definerede tilladelser til at kontrollere sikkerhed for bestemte grupper eller hele området.</p><p>Ajax-appen giver dig mulighed for at administrere adgangstilladelser i realtid. Du kan begrænse, udvide eller øjeblikkeligt blokere adgang.</p><h4 style="text-align:left">Databeskyttelse</h4><p>For at identificere brugere hurtigt og sikkert har KeyPad Plus DESFire®-teknologi. Det er den bedste kontaktløse løsning til at identificere en bruger med kort eller nøgletag.</p><p>DESFire® er baseret på ISO 14443 international standard og kombinerer omfattende 128-bit kryptering og kopibeskyttelse. Denne teknologi bruges også i transportsystemer i europæiske hovedstæder og adgangssystemer på NASA.</p><h4 style="text-align:left"><span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif">Installation og montering</span></h4><p class="row" style="text-align:left"><span style="font-size:12pt">Tastaturet er klar til installation lige fra kassen; batterierne&nbsp;er forudinstalleret og det er derfor ikke nødvendigt at skille tastaturet&nbsp;ad. Tilføjelse af systemet sker ved blot at skanne en QR kode. Herefter konfigurers tastaturet nemt i appen.&nbsp;Tastaturet monteres på det medfølgende SmartBracket hurtigt og nemt.</span><img style="width:100%" src="/upload_dir/pics/Ajax/Grafik-andre-billeder/tastatur-installation.png" alt=""></p><div class="col-s-4 col-m-6 col-l-6 col-xl-12" data-mh="text-item" style=""><h4>&nbsp;</h4><h4 style="text-align:left">Tekniske specifikationer:</h4><ul><ul><li>Type tastatur: Trådløs, touch-tastatur m. kort og nøglebrikslæser</li><li>Installation:&nbsp;Indendørs</li><li>Kompatibilitet: Hub Plus, Hub 2, Hub 2 Plus, ReX med OS Malevich 2.11 og højere</li><li>Tvangskode: Ja</li><li>Personlige adgangskoder: Ja</li><li>Beskyttelse mod at gætte kode: Ja</li><li>Til-/frakobling indikation: Ja</li><li>Kontaktløs adgang:&nbsp;DESFire® EV1, EV2, ISO14443-? (13,56MHz)</li><li>Strømforsyning: Batteri: 4 x lithium AA batterier, 1,5&nbsp;V. (batterierne er installerert parvis)</li><li>Batteri liv: Op til 4,5&nbsp;år</li><li>Driftstemperaturområde: Fra -10 ° ? til + 40 ° ?</li><li>Antisabotage</li><li>Dimensioner:165&nbsp;x&nbsp;113 x 20&nbsp;mm.</li><li>Vægt: 267 g</li></ul></ul><h4 style="text-align:left">Pakken indeholder:&nbsp;</h4><ul><ul><ul><li>KeyPad Plus tastatur</li><li>SmartBracket monteringsbeslag</li><li>4 x AA&nbsp;batterier (forudinstalleret)</li><li>Ekstern kontakt</li><li>Installationssæt</li><li>Brugervejledning</li></ul></ul></ul><p>* Kort og nøgleringe sælges separat<br>* Afhængigt af hub-modellen: Hub 2 - op til 50 brugere, Hub Plus - op til 99, Hub 2 Plus - op til 200.</p></div></div>               
+                
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Get the kategori-title and arrow element
+        const kategoriTitle = document.getElementById("kategori-title");
+        const kategoriList = document.querySelector(".kategori-listevisning");
+        const arrow = document.querySelector(".arrow");
+
+        // Add click event to toggle visibility and arrow rotation
+        kategoriTitle.addEventListener("click", () => {
+            kategoriList.classList.toggle("hidden");
+            arrow.classList.toggle("rotate");
+            
+            // Animate the height expansion or collapse
+            if (kategoriList.classList.contains("hidden")) {
+                kategoriList.style.height = "0";
+            } else {
+                kategoriList.style.height = kategoriList.scrollHeight + "px";
+            }
+        });
+
+        function changeImage(imageSrc) {
+        document.getElementById('mainProductImage').src = imageSrc;
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Nem Ip Cam - All Rights Reserved</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Cache and logs
+/logs/*
+!/logs/.gitkeep
+/cache/*
+!/cache/.gitkeep
+
+# Composer files
+composer.phar
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.cache
+*.bak
+*.swp
+*.tmp
+
+# Build files
+/build/
+/dist/
+
+# Test coverage
+/coverage/
+
+# Local development files
+/public/uploads/
+/public/storage/
+*.local.php
+
+# Backup files
+*.sql
+*.zip
+*.tar
+*.gz
+*.rar 
